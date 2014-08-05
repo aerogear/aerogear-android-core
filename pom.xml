@@ -42,6 +42,7 @@
 
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <aerogear.bom.version>0.2.4</aerogear.bom.version>
+        <android.version>4.4.2_r3</android.version>
 
         <!-- Plugin properties-->
         <maven.android.plugin.verson>3.8.0</maven.android.plugin.verson>
@@ -82,8 +83,9 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.google.android</groupId>
+            <groupId>android</groupId>
             <artifactId>android</artifactId>
+            <version>${android.version}</version>
             <scope>provided</scope>
         </dependency>
 
