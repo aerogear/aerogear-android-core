@@ -40,17 +40,18 @@
 
     <properties>
 
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+        <!-- Project depencies versions -->
         <aerogear.bom.version>0.2.4</aerogear.bom.version>
         <android.version>4.4.2_r3</android.version>
 
-        <!-- Plugin properties-->
-        <maven.android.plugin.verson>3.8.0</maven.android.plugin.verson>
+        <!-- Plugins versions -->
         <java.version>1.7</java.version>
-        <maven.dependency.plugin.version>2.5.1</maven.dependency.plugin.version>
+        <maven.javadoc.plugin.version>2.9.1</maven.javadoc.plugin.version>
+        <maven.android.plugin.verson>3.8.0</maven.android.plugin.verson>
         <builder.helper.plugin.version>1.7</builder.helper.plugin.version>
 
-        <android.avd>19</android.avd>
+        <!-- Android configs -->
         <android.platform>19</android.platform>
         <android.debug>false</android.debug>
         <proguard.skip>true</proguard.skip>
@@ -111,7 +112,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-javadoc-plugin</artifactId>
-                <version>2.9.1</version>
+                <version>${maven.javadoc.plugin.version}</version>
                 <executions>
                     <execution>
                         <id>attach-sources</id>
@@ -149,7 +150,7 @@
                         <platform>${android.platform}</platform>
                     </sdk>
                     <emulator>
-                        <avd>${android.avd}</avd>
+                        <avd>${android.platform}</avd>
                     </emulator>
                     <undeployBeforeDeploy>true</undeployBeforeDeploy>
                     <proguard>
