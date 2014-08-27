@@ -13,13 +13,12 @@ Until the 2.0 modules are stable and in Maven Central, we will need to build the
 
 ## Usage
 
-There are three supported ways of developing apps using Aerogear for Android.  Development may be done with Maven, ADT on Eclipse, and Android Studio.  Maven and Android Studio feature good dependency and library management and are far easier to get set up and developing.  Eclipse with ADT is the current stable and traditional way of performing Android development.
-
+There are three supported ways of developing apps using Aerogear for Android.  Development may be done with Maven and Android Studio.  Maven and Android Studio feature good dependency and library management and are far easier to get set up and developing. 
 ### Android Studio
 Add to your application's `build.gradle` file
 ```
 dependencies {
-  compile 'org.jboss.aerogear:aerogear-android-core:2.0-SNAPSHOT@aar'
+  compile 'org.jboss.aerogear:aerogear-android-core:2.0.0-SNAPSHOT@aar'
   //My other dependencies
 }
 ```
@@ -41,7 +40,7 @@ Include the following dependencies in your project's `pom.xml`
 <dependency>
   <groupId>org.jboss.aerogear</groupId>
   <artifactId>aerogear-android</artifactId>
-  <version>1.3.1</version>
+  <version>2.0.0-SNAPSHOT</version>
   <scope>provided</scope>
   <type>jar</type>
 </dependency>
@@ -49,20 +48,10 @@ Include the following dependencies in your project's `pom.xml`
 <dependency>
   <groupId>org.jboss.aerogear</groupId>
   <artifactId>aerogear-android</artifactId>
-  <version>1.3.1</version>
+  <version>2.0.0-SNAPSHOT</version>
   <type>apklib</type>
 </dependency>
 ```
-
-### Eclipse
-After downloading the project run
-
-```
-mvn dependency:copy
-```
-
-Now you can import the library into Eclipse and link against it in your main projects.
-
 ## Documentation
 
 For more details about the current release, please consult [our documentation](http://aerogear.org/docs/guides/aerogear-android/).
