@@ -43,7 +43,7 @@
 
         <!-- Project depencies versions -->
         <aerogear.bom.version>0.2.4</aerogear.bom.version>
-        <android.version>4.4.2_r3</android.version>
+        <android.version>4.4.2_r4</android.version>
 
         <!-- Plugins versions -->
         <java.version>1.7</java.version>
