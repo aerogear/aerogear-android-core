@@ -28,7 +28,7 @@
     <parent>
         <groupId>org.jboss.aerogear</groupId>
         <artifactId>aerogear-parent</artifactId>
-        <version>0.2.4</version>
+        <version>0.2.8</version>
     </parent>
 
     <scm>
@@ -39,14 +39,10 @@
     </scm>
 
     <properties>
-
-
         <!-- Project depencies versions -->
-        <aerogear.bom.version>0.2.4</aerogear.bom.version>
-        <android.version>4.4.2_r4</android.version>
+        <aerogear.bom.version>0.2.8</aerogear.bom.version>
 
         <!-- Plugins versions -->
-        <java.version>1.7</java.version>
         <maven.javadoc.plugin.version>2.9.1</maven.javadoc.plugin.version>
         <maven.android.plugin.version>3.8.0</maven.android.plugin.version>
         <builder.helper.plugin.version>1.7</builder.helper.plugin.version>
@@ -58,7 +54,6 @@
     </properties>
 
     <dependencyManagement>
-
         <dependencies>
 
             <!-- AeroGear Dependencies BOM Imports -->
@@ -86,13 +81,7 @@
         <dependency>
             <groupId>android</groupId>
             <artifactId>android</artifactId>
-            <version>${android.version}</version>
             <scope>provided</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>com.google.android</groupId>
-            <artifactId>annotations</artifactId>
         </dependency>
     </dependencies>
 
@@ -135,8 +124,8 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
-                    <source>${java.version}</source>
-                    <target>${java.version}</target>
+                    <source>${maven.compiler.source}</source>
+                    <target>${maven.compiler.target}</target>
                 </configuration>
             </plugin>
             <plugin>
