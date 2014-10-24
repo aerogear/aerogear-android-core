@@ -21,7 +21,7 @@
     <groupId>org.jboss.aerogear</groupId>
     <artifactId>aerogear-android-core</artifactId>
     <version>2.0.0-SNAPSHOT</version>
-    <packaging>apklib</packaging>
+    <packaging>aar</packaging>
     <name>AeroGear Android Core Library</name>
     <url>http://aerogear.org</url>
 
@@ -44,7 +44,7 @@
 
         <!-- Plugins versions -->
         <maven.javadoc.plugin.version>2.9.1</maven.javadoc.plugin.version>
-        <maven.android.plugin.version>3.8.0</maven.android.plugin.version>
+        <maven.android.plugin.version>4.0.0-rc.1</maven.android.plugin.version>
         <builder.helper.plugin.version>1.7</builder.helper.plugin.version>
 
         <!-- Android configs -->
@@ -86,7 +86,6 @@
     </dependencies>
 
     <build>
-        <sourceDirectory>src</sourceDirectory>
         <pluginManagement>
             <plugins>
                 <plugin>
@@ -146,15 +145,6 @@
                         <skip>${proguard.skip}</skip>
                     </proguard>                    
                 </configuration>
-                <executions>
-                    <execution>
-                        <phase>package</phase>
-                        <goals>
-                            <goal>aar</goal>
-                            <goal>apklib</goal>
-                        </goals>
-                    </execution>
-                </executions>
             </plugin>
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
@@ -168,10 +158,6 @@
                         </goals>
                         <configuration>
                             <artifacts>
-                                <artifact>
-                                    <type>aar</type>
-                                    <file>${project.build.directory}/${project.build.finalName}.aar</file>
-                                </artifact>
                                 <artifact>
                                     <type>jar</type>
                                     <file>${project.build.directory}/${project.build.finalName}.jar</file>
