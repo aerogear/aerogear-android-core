@@ -5,5 +5,4 @@
           package="org.jboss.aerogear.android.core">
 
     <uses-sdk android:minSdkVersion="16" android:targetSdkVersion="21"/>
-    <application/>
 </manifest>
