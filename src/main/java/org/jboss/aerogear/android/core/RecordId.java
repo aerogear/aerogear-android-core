@@ -14,28 +14,19 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.jboss.aerogear.android;
+package org.jboss.aerogear.android.core;
 
-import java.io.Serializable;
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.annotation.Target;
 
 /**
- * A handler for consuming the data/result of an operation.
+ * Specifies field represent a key of an entity
  *
- * @param <T> The data type of the operation
+ * This needs an pair of accessor methods (getter/setter)
  */
-public interface Callback<T> extends Serializable {
-
-    /**
-     * Called when operation completes with success.
-     *
-     * @param data The received data of the operation.
-     */
-    void onSuccess(T data);
-
-    /**
-     * Invoked when an operation has failed.
-     *
-     * @param e The exception to give more insights on why the operation has failed.
-     */
-    void onFailure(Exception e);
+@Target(ElementType.FIELD)
+@Retention(RetentionPolicy.RUNTIME)
+public @interface RecordId {
 }

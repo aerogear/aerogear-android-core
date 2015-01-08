@@ -14,10 +14,21 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.jboss.aerogear.android;
+package org.jboss.aerogear.android.core.reflection;
 
-public interface ConfigurationProvider<CFG extends Config<CFG>> {
+/**
+ * Thrown when a particular field cannot be found.
+ */
+public class FieldNotFoundException extends RuntimeException {
 
-    CFG newConfiguration();
+    /**
+     * Constructs with class and fieldName cannot be found.
+     *
+     * @param klass Class where field cannot be found.
+     * @param fieldName field cannot be found.
+     */
+    public FieldNotFoundException(Class klass, String fieldName) {
+        super("Cannot find field " + fieldName + " on " + klass.getSimpleName());
+    }
 
 }

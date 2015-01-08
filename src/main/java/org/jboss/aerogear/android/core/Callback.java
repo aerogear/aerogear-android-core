@@ -14,17 +14,28 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.jboss.aerogear.android;
+package org.jboss.aerogear.android.core;
 
-public interface Provider<T> {
+import java.io.Serializable;
+
+/**
+ * A handler for consuming the data/result of an operation.
+ *
+ * @param <T> The data type of the operation
+ */
+public interface Callback<T> extends Serializable {
 
     /**
-     * 
-     * Constructs and returns an object of type T
-     * 
-     * @param in a variable number of parameters to pass to the constructor
-     * @return an instance of T 
+     * Called when operation completes with success.
+     *
+     * @param data The received data of the operation.
      */
-    public T get(Object... in);
+    void onSuccess(T data);
 
+    /**
+     * Invoked when an operation has failed.
+     *
+     * @param e The exception to give more insights on why the operation has failed.
+     */
+    void onFailure(Exception e);
 }

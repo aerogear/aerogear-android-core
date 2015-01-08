@@ -14,12 +14,17 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.jboss.aerogear.android;
+package org.jboss.aerogear.android.core;
 
-public interface Config<CFG extends Config> {
+public interface Provider<T> {
 
-    String getName();
-
-    CFG setName(String name);
+    /**
+     * 
+     * Constructs and returns an object of type T
+     * 
+     * @param in a variable number of parameters to pass to the constructor
+     * @return an instance of T 
+     */
+    public T get(Object... in);
 
 }

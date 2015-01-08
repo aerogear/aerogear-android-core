@@ -14,19 +14,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.jboss.aerogear.android;
+package org.jboss.aerogear.android.core;
 
-import java.lang.annotation.ElementType;
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
-import java.lang.annotation.Target;
+public interface Config<CFG extends Config> {
 
-/**
- * Specifies field represent a key of an entity
- *
- * This needs an pair of accessor methods (getter/setter)
- */
-@Target(ElementType.FIELD)
-@Retention(RetentionPolicy.RUNTIME)
-public @interface RecordId {
+    String getName();
+
+    CFG setName(String name);
+
 }
