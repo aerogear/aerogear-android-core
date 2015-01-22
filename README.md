@@ -21,7 +21,7 @@ There are two supported ways of developing apps using AeroGear for Android: Andr
 Add to your application's `build.gradle` file
 ```
 dependencies {
-  compile 'org.jboss.aerogear:aerogear-android-core:2.0.0@aar'
+  compile 'org.jboss.aerogear:aerogear-android-core:2.0.0'
   //My other dependencies
 }
 ```
