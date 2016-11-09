@@ -3,23 +3,24 @@
 sudo: required
 dist: precise
 
+notifications:
+  irc: "irc.freenode.org#aerogear"
+
 language: android
 
 jdk:
   - oraclejdk8
-  - oraclejdk7
-
-notifications:
-  irc: "irc.freenode.org#aerogear"
 
 android:
   components:
-    - build-tools-23.0.3
-    - android-23
+    - platform-tools
+    - tools
+    - build-tools-24.0.3
+    - android-24
 
 env:
-    matrix:
-      - ANDROID_TARGET=android-23
+  matrix:
+    - ANDROID_SDK="android-24"
 
 before_install:
 
@@ -31,6 +32,6 @@ before_install:
   - git clone git://github.com/mosabua/maven-android-sdk-deployer.git
 
   # Install android maven repository
-  - cd $PWD/maven-android-sdk-deployer/platforms/$ANDROID_TARGET
-  - mvn  install -N --quiet
+  - cd $PWD/maven-android-sdk-deployer/platforms/${ANDROID_SDK}
+  - mvn install -N --quiet
   - cd -

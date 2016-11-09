@@ -48,7 +48,7 @@
         <builder.helper.plugin.version>1.10</builder.helper.plugin.version>
 
         <!-- Android configs -->
-        <android.platform>23</android.platform>
+        <android.platform>24</android.platform>
         <android.debug>false</android.debug>
         <proguard.skip>true</proguard.skip>
     </properties>
