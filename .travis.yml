@@ -7,19 +7,18 @@ language: android
 
 jdk:
   - oraclejdk8
-  - oraclejdk7
 
 notifications:
   irc: "irc.freenode.org#aerogear"
 
 android:
   components:
-    - build-tools-23.0.3
-    - android-23
+    - build-tools-25.0.0
+    - android-24
 
 env:
     matrix:
-      - ANDROID_TARGET=android-23
+      - ANDROID_TARGET=android-24
 
 before_install:
 
