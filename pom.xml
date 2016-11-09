@@ -43,7 +43,6 @@
         <aerogear.bom.version>0.2.21</aerogear.bom.version>
 
         <!-- Plugins versions -->
-        <maven.javadoc.plugin.version>2.10.4</maven.javadoc.plugin.version>
         <maven.android.plugin.version>4.4.3</maven.android.plugin.version>
         <builder.helper.plugin.version>1.12</builder.helper.plugin.version>
 
@@ -100,7 +99,6 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-javadoc-plugin</artifactId>
-                <version>${maven.javadoc.plugin.version}</version>
                 <executions>
                     <execution>
                         <id>attach-sources</id>
