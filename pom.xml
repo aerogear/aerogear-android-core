@@ -20,7 +20,7 @@
 
     <groupId>org.jboss.aerogear</groupId>
     <artifactId>aerogear-android-core</artifactId>
-    <version>3.0.1-SNAPSHOT</version>
+    <version>3.1.0</version>
     <packaging>aar</packaging>
     <name>AeroGear Android Core Library</name>
     <url>http://aerogear.org</url>
@@ -35,7 +35,7 @@
         <connection>scm:git:git@github.com:aerogear/aerogear-android-core.git</connection>
         <developerConnection>scm:git:git@github.com:aerogear/aerogear-android-core.git</developerConnection>
         <url>git@github.com:aerogear/aerogear-android-core.git</url>
-        <tag>HEAD</tag>
+        <tag>3.1.0</tag>
     </scm>
 
     <properties>
