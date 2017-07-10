@@ -1,6 +1,7 @@
 # AeroGear Android Core
 
-[![Travis](https://img.shields.io/travis/aerogear/aerogear-android-core.svg)](http://travis-ci.org/aerogear/aerogear-android-core)
+[![travis-ci](https://img.shields.io/travis/aerogear/aerogear-android-core/master.svg)](http://travis-ci.org/aerogear/aerogear-android-core)
+[![circle-ci](https://img.shields.io/circleci/project/github/aerogear/aerogear-android-core/master.svg)](https://circleci.com/gh/aerogear/aerogear-android-core)
 [![License](https://img.shields.io/badge/-Apache%202.0-green.svg)](https://opensource.org/s/Apache-2.0)
 [![Maven Central](https://img.shields.io/maven-central/v/org.jboss.aerogear/aerogear-android-core.svg)](http://search.maven.org/#search%7Cga%7C1%7Caerogear-android-core)
 [![Javadocs](http://www.javadoc.io/badge/org.jboss.aerogear/aerogear-android-core.svg?color=blue)](http://www.javadoc.io/doc/org.jboss.aerogear/aerogear-android-core)
