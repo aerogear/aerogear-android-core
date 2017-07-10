@@ -18,9 +18,5 @@ android:
     - build-tools-25.0.3
     - android-25
 
-env:
-  matrix:
-    - ANDROID_SDK="android-25"
-
 script: 
   - ./gradlew clean build
