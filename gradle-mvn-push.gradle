@@ -41,6 +41,7 @@ def getRepositoryPassword() {
 }
 
 group = POM_GROUP_ID
+project.archivesBaseName = POM_ARTIFACT_ID
 version = VERSION_NAME
 
 afterEvaluate { project ->
