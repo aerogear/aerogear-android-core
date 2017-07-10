@@ -15,23 +15,8 @@ android:
   components:
     - platform-tools
     - tools
-    - build-tools-24.0.3
-    - android-24
+    - build-tools-25.0.3
+    - android-25
 
-env:
-  matrix:
-    - ANDROID_SDK="android-24"
-
-before_install:
-
-  #################################################
-  ########## maven-android-sdk-deployer ###########
-  #################################################
-
-  # Checkout maven-android-sdk-deployer
-  - git clone git://github.com/mosabua/maven-android-sdk-deployer.git
-
-  # Install android maven repository
-  - cd $PWD/maven-android-sdk-deployer/platforms/${ANDROID_SDK}
-  - mvn install -N --quiet
-  - cd -
+script: 
+  - ./gradlew clean build
