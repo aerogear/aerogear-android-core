@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: aerogear-android-core
+  annotations:
+    github.com/project-slug: aerogear/aerogear-android-core
+spec:
+  type: other
+  lifecycle: unknown
+  owner: user:default/guest
